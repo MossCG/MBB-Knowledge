@@ -1,0 +1,16 @@
+# 本地生产工具、立绘和过程记录
+tools/
+artwork/
+notes/
+
+# 临时生产提示词
+*-PROMPT.md
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# 系统文件
+Thumbs.db
+.DS_Store
