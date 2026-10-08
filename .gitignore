@@ -6,6 +6,10 @@ notes/
 # 临时生产提示词
 *-PROMPT.md
 
+# 本地 AI 维护说明
+AGENT.md
+AGENTS.md
+
 # IDE
 .idea/
 *.iml
