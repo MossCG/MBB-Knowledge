@@ -7,7 +7,7 @@ MoBoxBot 角色扮演插件的知识库内容项目。产出直接对应
 
 1. 产出《蔚蓝档案》全部基础角色的完整设定，共 153 人。
 2. 补齐世界观、术语、剧情三个资料库。
-3. 用校验脚本保证格式统一，避免人工返工。
+3. 本地生产时用校验脚本保证格式统一，避免人工返工。
 
 ## 文件说明
 
@@ -21,6 +21,8 @@ MoBoxBot 角色扮演插件的知识库内容项目。产出直接对应
 | `knowledge/` | 知识库产出目录 |
 | `legacy/students.json` | 插件早期自带的 69 人外貌图鉴，已停止随插件打包，留档在这里 |
 | `tools/`、`artwork/`、`notes/` | 本地生产工作目录，保留在磁盘但已在 `.gitignore` 中，不进入公开仓库 |
+
+公开仓库不包含 `tools/`、`artwork/`、`notes/`。下面的脚本命令只适用于本地保留这些目录的工作副本。
 
 ## 目录结构
 
@@ -55,7 +57,7 @@ MBB-Knowledge/
 
 学园译名以国服为准：`Highlander` 写作**海兰德铁道学院**，设定集里的"高原众铁道学园"是旧译名，不要沿用。
 
-角色总表重新生成：
+本地工作副本重新生成角色总表：
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\build-roster.ps1
@@ -96,9 +98,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\validate-knowledge.ps1
 3. 用 /role kb list 确认条目数，用 /role kb search <文本> 抽查检索结果
 ```
 
-插件侧的加载器说明见
-`D:\CodeX\Projects\MBB-Plugins\MBB-Roleplay\KNOWLEDGE.md` 与
-`D:\CodeX\Projects\MBB-Plugins\MBB-Roleplay\README.md`。
+插件侧的加载器说明见插件仓库中的 `MBB-Roleplay/KNOWLEDGE.md` 与 `MBB-Roleplay/README.md`。
 
 ## 本地生产材料
 
